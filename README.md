@@ -1,6 +1,5 @@
-# The Bishop bot
-
-Discord bot for a server I run. Does joke things and role moderation.
+# The Moto bot
+This is a discord bot that adds roles and does funny things for the OSU motorcycle club
 
 ## Setup
 
@@ -13,10 +12,10 @@ Discord bot for a server I run. Does joke things and role moderation.
 
 ```sh
 # build image
-docker build -t detjensrobert/the-bishop .
+docker build -t ./the-bishop .
 # run container as daemon with config files
-docker run -d --rm --name the-bishop -v $(pwd)/config.yml:/app/config.yml \
-   -v $(pwd)/roles.yml:/app/roles.yml detjensrobert/the-bishop
+docker run -d --rm --name motoBot -v $(pwd)/config.yml:/app/config.yml \
+   -v $(pwd)/roles.yml:/app/roles.yml motoBot/motoBot
 ```
 
 ## Run locally
